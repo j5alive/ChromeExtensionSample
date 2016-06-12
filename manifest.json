@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Raygun Error Sample",
+  "description": "Send Chrome extension errors to Raygun",
+  "version": "0.1",
+  "icons": { "128": "logo.png" },
+
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_title": "Raygun sample",
+    "default_popup": "content.html"
+  },
+
+  "background": {
+    "scripts": [ "raygun.min.js", "background.js" ]
+  },
+
+  "permissions": [
+    "https://*/"
+  ]
+}
